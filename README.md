@@ -9,6 +9,9 @@ docker build -t ray_hello_world --platform linux/amd64 .
 ```
 
 You can then run the image
+
 ```angular2html
 docker run ray_hello_world
 ```
+
+The crappy part is, since you don't have the architecture to run this docker image on a M1 chip, this code will always fail on  your local machine. However, if you run the image on a linux machine (or in the cloud with amd/64 architecture). This will run
